@@ -1,0 +1,49 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "Soap tittle 1",
+      "description": "Tulajdonságok"
+    },
+    {
+      "id": 2,
+      "name": "Soap tittle 2",
+      "description": "hello mas"
+    },
+    {
+      "name": "Soap tittle 3",
+      "id": 3,
+      "description": "állmos vagyok"
+    },
+    {
+      "name": "Soap tittle 4",
+      "id": 4,
+      "description": "Fél egy van"
+    },
+    {
+      "name": "Soap tittle 5",
+      "id": 5,
+      "description": "elakadtam"
+    },
+    {
+      "name": "Soap tittle 6",
+      "id": 6,
+      "description": "megoldottam"
+    },
+    {
+      "name": "Soap tittle 7",
+      "id": 7,
+      "description": "nem leszek kész holnapig"
+    },
+    {
+      "name": "Soap tittle 8",
+      "id": 8,
+      "description": "gyenge lesz a vizsga"
+    },
+    {
+      "name": "Soap tittle 9",
+      "id": 9,
+      "description": "sokat kell még tanuljak"
+    }
+  ]
+}

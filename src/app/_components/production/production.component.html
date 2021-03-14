@@ -1,0 +1,28 @@
+<div class="alert alert-danger text-center p-5 display-3" role="alert">
+  Az oldal karbantartás allat 
+ </div>
+ <div class="container text-center mt-4">
+<form [formGroup]="soapForm" (ngSubmit)="onSubmit()">
+  <label>
+   <h3><p class="text-muted">Add new soap:</p></h3>
+    <input type="text" formControlName="soapName" required>
+  </label>
+
+  <button class="ml-2 btn-primary">save</button>
+
+</form> 
+</div>
+
+<div *ngIf="soap" class="grid grid-pad">
+  <a *ngFor="let soaps of soap" class="menu" routerLink="/production/{{soaps.id}}">
+    <img  src="../../../assets/img//action_1.jpg">
+    <div class="module">
+      <h4>{{soaps.name}}</h4>
+      <p>{{soaps.description}}</p>
+      <p class="bg-dark text-white">Price 50$</p>
+ </div>
+  </a>
+</div>
+
+
+

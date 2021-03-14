@@ -1,0 +1,76 @@
+
+<!--Navbar-->
+<nav class="navbar col-lg-12 col-md-12 col-sm-12 navbar-expand-sm bg-white">
+  <a class="navbar-brand" href="#"></a>
+
+  <!--Hamburgermenu-->
+
+  <div id="myTopNav"  (click)="hamburMenu()">
+      <button  class="navbar-toggler" type="button" data-toggle="collapse"  data-target="#navmain">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+      </button>
+  </div>
+
+  <div  class="main-nav collapse navbar-collapse" id="navmain">
+      <ul  class="navbar-nav ml-auto">
+          <li  class="nav-item  mr-1 mt-1" routerLinkActive="active">
+              <a routerLink='/dashboard'  class="nav-link">Főoldal</a>
+          </li>
+          <li class="nav-item mr-1 mt-1" routerLinkActive="active">
+              <a routerLink='/production' class="nav-link">Termékeink</a>
+          </li>
+          <li class="nav-item mr-1 mt-1" routerLinkActive="active">
+              <a routerLink='/relation' class="nav-link">Kapcsolatok</a>
+          </li>
+          <li class="nav-item mr-1 mt-1" routerLinkActive="active">
+              <a routerLink='/about' class="nav-link">Rólunk</a>
+          </li>
+          <li class="nav-item mr-1 mt-1" routerLinkActive="active">
+              <a routerLink='/account' class="nav-link">Regisztráció</a>
+          </li>
+          <li class="nav-item mr-1 mt-1">
+              <a routerLink='/dashboard' class="nav-link">Belépés</a>
+          </li>
+      </ul>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
+
+
+<!--Footer-->
+<div class="footer-basic">
+  <footer>
+       <div id="myBottomNav" class="social">
+          <a  href="https://www.facebook.com/" target="_blank">
+              <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+          <a href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+          <a href="#">
+              <ion-icon name="logo-pinterest"></ion-icon>
+          </a>
+          <a href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+      </div> 
+      <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Elérhetőségek</a></li>
+          <li class="list-inline-item"><a href="#">Rolunk</a></li>
+          <li id="google_map" onclick="google()" class="list-inline-item">Google Maps</li>
+      </ul>
+      <div class="copyright">&copy; S&S 2010-<span id="lablec"></span></div>
+
+      <div id="google_footter" class="mapouter">
+          <div class="gmap_canvas"><iframe id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe><a
+                  href="https://embedgooglemap.net/maps/54"></a>
+              <br>
+          </div>
+      </div>
+  </footer>
+</div>
+<!--scripts-->
